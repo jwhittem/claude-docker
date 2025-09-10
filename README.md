@@ -5,6 +5,7 @@ running claude code in a container
 
 Just run `make`
 
-## Running
+## Add bash alias
 
-docker run -it -v ${HOME}/.claude:/home/node/.claude -v .:/workspace claude-cli
+alias claude="docker run -it -v ${HOME}/.claude:/home/node/.claude -v .:/workspace claude-cli"
+
