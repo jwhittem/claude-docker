@@ -1,4 +1,4 @@
 
 build:
-	docker build -t claude-cli .
+	podman build -t claude-cli .
 
