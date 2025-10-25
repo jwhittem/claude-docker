@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//root/.claude/**)",
+      "mcp__awslabs_terraform-mcp-server__SearchSpecificAwsIaModules",
+      "mcp__awslabs_terraform-mcp-server__SearchAwsProviderDocs",
+      "Bash(mkdir -p /workspace/test)",
+      "mcp__awslabs_aws-api-mcp-server__suggest_aws_commands",
+      "mcp__awslabs_aws-api-mcp-server__call_aws",
+      "Bash(terraform fmt)",
+      "mcp__awslabs_terraform-mcp-server__RunCheckovScan"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
