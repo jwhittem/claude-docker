@@ -7,5 +7,15 @@ Just run `make`
 
 ## Add bash alias
 
-alias claude="docker run -it -v ${HOME}/.claude:/home/node/.claude -v .:/workspace claude-cli"
+alias claude="<path>/claude-run.sh"
 
+### Using the container via shell script
+
+```
+docker run -it \
+ -e AWS_REGION=us-east-2 \
+ -v .:/workspace \
+ -v $HOME/.aws-claude:/root/.aws \
+ -v $HOME/.claude:/home/node/.claude \
+ claude-cli:latest 
+```

@@ -36,4 +36,6 @@ ENV CLAUDE_CONFIG_DIR=/home/node/.claude
 
 RUN npm install -g @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
 
-CMD ["claude"]
+COPY start.sh /
+
+ENTRYPOINT ["/start.sh"]
